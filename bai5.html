@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Viết chương trình khai báo mảng gồm nhiều đối tượng Book có hai thuộc tính author và name. 
+        var Books=[{author:"J. K. Rowling",name:"Harry Potter"},
+        {author:"Stephenie Meyer",name:"Twilight"},
+        {author:"Conan Doyle",name:"Sherlock Holmes"}];
+
+        // Yêu cầu người dùng nhập tên Auth từ bàn phím thông qua hàm prompt(). 
+        var tacGia = prompt("nhập tên author:");
+        // Sau đó tiến hành tìm kiếm thông tin sách theo tác giả.
+        check =false;
+        for( var i =0; i<Books.length;i++){
+            if (tacGia.toLowerCase()===Books[i].author.toLowerCase()){
+                // Nếu tìm thấy thì in ra ngoài màn hình đối tượng Book tìm được
+                document.write("Tác giả: " + Books[i].author + ", Tên sách: " + Books[i].name);
+                check = true;
+                break;         
+     }
+    }
+      // nếu không tìm thấy thì in ra “Không tìm thấy sách”>
+     if (!check) {
+            document.write("Không tìm thấy sách")
+        }
+    </script>
+</body>
+
+</html>

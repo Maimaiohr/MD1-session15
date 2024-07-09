@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // khai báo đối tượng information có các thuộc tính id, name, phone, address. 
+        // Yêu cầu người dùng nhập vào thông tin cá nhân 
+        var information = {
+            id: prompt("moi ban nhap ID"),
+            name: prompt("moi ban nhap ten"),
+            phone: prompt("moi ban nhap so dien thoai"),
+            address: prompt("moi ban nhap dia chi"),
+            showinfo: function () {
+                // in ra màn hình.
+                document.write("<h1>Thong tin cua ban:</h1>");
+                document.write(`<h2>id cua ban la: ${this.id}</h2>`);
+                document.write(`<h2>Ten cua ban la: ${this.name}</h2>`);
+                document.write(`<h2>So dien thoai cua ban la: ${this.phone}</h2>`);
+                document.write(`<h2>Email cua ban la: ${this.address}</h2>`);
+            }
+        }
+        information.showinfo()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Cho một mảng products chứa các đối tượng product gồm các thông tin sau: 
+        // id, product_name, price.
+        var products =[
+            { id:"1",name:"Iphone12",price:20000000},
+            { id:"2",name:"Iphone11",price:10000000},
+            { id:"3",name:"Iphone15",price:40000000},
+        ]
+        //  Xây dựng hàm để sắp xếp danh sách products tăng dần
+        function Sapxep(products) {
+            products.sort((a, b) => a.price - b.price);
+            for(var i=0;i<products.length;i++){
+                    // in ra mảng đã được sắp xếp ra ngoài màn hình
+                    document.write(products[i].id + " "+products[i].name+" "+products[i].price)
+                }
+            }
+        Sapxep(products);
+    </script>
+</body>
+</html>

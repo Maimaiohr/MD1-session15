@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        
+        function arrayStudents() {
+            var students = [];
+            var soLuong =+prompt("Nhap so luong sinh vien");
+             // Lấy thông tin của mỗi sinh viên và thêm vào mảng
+            for (var i = 0; i < soLuong; i++) {
+                var id =prompt("nhap ID sinh vien"+ (i + 1)) ;
+                var name =prompt("nhap ten sinh vien"+ (i + 1)) ;
+                var student = {id: id, name: name};
+                students.push(student);
+            }
+            // in mảng các sinh viên ra màn hình
+            for ( var j=0;j<students.length;j++){
+                document.write("students"+(j+1)+":ID="+ students[j].id+",Name ="+ students[j].name+"<br>");
+            }
+
+        }
+        arrayStudents();
+    </script>
+</body>
+</html>

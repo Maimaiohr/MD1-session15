@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Viết chương trình khai báo đối tượng information có các thuộc tính id, name, phone, address. 
+         
+         var information = {
+            id: "B1",
+            name: "Nguyen Mai",
+            phone: 12345,
+            address: "Viet Nam",
+            showinfo: function () {
+                document.write("<h1>Thong tin cua ban:</h1>");
+                document.write(`<h2>id cua ban la: ${this.id}</h2>`);
+                document.write(`<h2>Ten cua ban la: ${this.name}</h2>`);
+                document.write(`<h2>So dien thoai cua ban la: ${this.phone}</h2>`);
+                document.write(`<h2>Email cua ban la: ${this.email}</h2>`);
+            }
+        }
+        // Tiến hành xóa thuộc tính address và thêm thuộc tính email cho đối tượng
+        delete information.address;
+        information.email = "abd@gmail.com";
+        // và in đối tượng ra màn hình.
+        information.showinfo()
+    </script>
+</body>
+</html>

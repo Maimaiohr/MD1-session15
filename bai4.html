@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   
+     
+
+    <script>
+        //  Viết chương trình khai báo đối tượng product bao gồm các thuộc tính
+        //     id, name, price, quantity.
+        var product = {
+            id: "AB123",
+            name: "Fruit",
+            price: "100.000vnd",
+            quantity: "good",
+            showinfo: function () {
+                // Tiến hành in tất cả các thuộc tính của product và giá trị của thuộc tính đó ra màn hình
+                document.write("<h1>Thong tin san pham:</h1>");
+                document.write(`<h2>id cua san pham la: ${this.id}</h2>`);
+                document.write(`<h2>Ten cua san pham la: ${this.name}</h2>`);
+                document.write(`<h2>Gia san pham la: ${this.price}</h2>`);
+                document.write(`<h2>EChat luong san pham: ${this.quantity}</h2>`);
+            }
+        }
+        product.showinfo()
+    </script>
+</body>
+
+</html>
